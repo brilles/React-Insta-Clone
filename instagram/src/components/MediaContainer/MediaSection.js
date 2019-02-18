@@ -3,7 +3,7 @@ import React from "react";
 const MediaSection = props => {
   return (
     <div className="img-container">
-      <img src={props.media.imageUrl} alt="media" />
+      <img src={props.imageUrl} alt="media" />
     </div>
   );
 };

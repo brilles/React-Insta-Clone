@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PostsContainer dummydata={this.state.postsData} />
+        <PostsContainer postsData={this.state.postsData} />
       </div>
     );
   }

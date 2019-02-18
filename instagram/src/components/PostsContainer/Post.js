@@ -11,7 +11,7 @@ const Post = props => {
         thumbnailUrl={props.post.thumbnailUrl}
       />
       <MediaSection imageUrl={props.post.imageUrl} />
-      <CommentSection />
+      <CommentSection comments={props.post.comments} />
     </div>
   );
 };

@@ -12,8 +12,8 @@ class CommentContainer extends Component {
   render() {
     return (
       <div>
-        {this.state.comments.map((commentDatum, index) => (
-          <CommentSection key={index} comment={commentDatum} />
+        {this.state.commentsData.map((commentsDatum, index) => (
+          <CommentSection key={index} comment={commentsDatum} />
         ))}
         <CommentForm />
       </div>
