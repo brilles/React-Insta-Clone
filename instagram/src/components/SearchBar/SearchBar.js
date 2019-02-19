@@ -9,7 +9,7 @@ function SearchBar() {
         <img src={instagramlogo} alt="instagram logo" />
       </div>
       <div className="search">
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder=" Search" />
       </div>
       <div className="links">
         <div className="links-item">

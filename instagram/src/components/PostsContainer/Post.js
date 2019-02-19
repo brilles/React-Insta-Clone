@@ -2,6 +2,8 @@ import React from "react";
 import HeaderSection from "./HeaderSection";
 import MediaSection from "../MediaContainer/MediaSection";
 import CommentSection from "../CommentContainer/CommentContainer";
+import "./Post.css";
+import LikeSection from "./LikeSection";
 
 const Post = props => {
   return (
@@ -11,6 +13,7 @@ const Post = props => {
         thumbnailUrl={props.post.thumbnailUrl}
       />
       <MediaSection imageUrl={props.post.imageUrl} />
+      <LikeSection likes={props.post.likes} />
       <CommentSection comments={props.post.comments} />
     </div>
   );
