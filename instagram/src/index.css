@@ -149,3 +149,7 @@ input,
 button {
   outline: 0;
 }
+
+i {
+  cursor: pointer;
+}
