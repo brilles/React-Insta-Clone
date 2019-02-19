@@ -1,7 +1,7 @@
 import React from "react";
 import HeaderSection from "./HeaderSection";
 import MediaSection from "../MediaContainer/MediaSection";
-import CommentSection from "../CommentContainer/CommentContainer";
+import CommentSection from "../CommentContainer/CommentSection";
 import "./Post.css";
 import LikeSection from "./LikeSection";
 

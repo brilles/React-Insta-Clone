@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log("CDM running");
+    // console.log("CDM running");
     this.setState({ postsData: dummyData });
   }
   render() {
