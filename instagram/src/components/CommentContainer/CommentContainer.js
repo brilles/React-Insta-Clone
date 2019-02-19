@@ -16,7 +16,6 @@ class CommentContainer extends Component {
   render() {
     return (
       <div className="comment-container">
-        {console.log(this.props)}
         {this.state.commentsData.map((commentsDatum, index) => (
           <CommentSection key={index} comment={commentsDatum} />
         ))}

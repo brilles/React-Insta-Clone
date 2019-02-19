@@ -11,5 +11,6 @@
   margin-bottom: 10px;
   border-bottom: 1px solid lightgray;
   font-size: 0.8rem;
-  color: lightgray;
+  color: gray;
+  font-weight: 500;
 }
