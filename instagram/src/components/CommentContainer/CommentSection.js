@@ -15,21 +15,22 @@ class CommentSection extends Component {
     };
   }
 
-  handleChanges = e => {
-    this.setState({ comment: e.target.value });
-  };
-
   addNewComment = e => {
     e.preventDefault();
     this.setState({
       commentsData: [
         ...this.state.commentsData,
         {
-          username: "brilles",
+          username: "human44",
           text: this.state.comment
         }
-      ]
+      ],
+      comment: ""
     });
+  };
+
+  handleChanges = e => {
+    this.setState({ comment: e.target.value });
   };
 
   render() {
@@ -47,6 +48,7 @@ class CommentSection extends Component {
           </p>
         </div>
         <CommentForm
+          comment={this.state.comment}
           addComment={this.addNewComment}
           change={this.handleChanges}
         />
