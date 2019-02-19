@@ -1,7 +1,48 @@
 .search-bar-container {
   display: flex;
-  flex-direction: row;
+  height: 98px;
+  border-bottom: 1px solid lightgray;
 }
-.search-bar-container.logo.img {
-  height: 200px;
+
+.logo {
+  width: 38.5%;
+  display: flex;
+  align-items: center;
+}
+
+.fab {
+  padding: 3px 26px 0 20px;
+  border-right: 1px solid #000;
+}
+
+.logo > img {
+  padding-top: 11px;
+  width: 140px;
+  height: 40px;
+  padding-left: 22px;
+}
+
+.search {
+  width: 42.5%;
+  display: flex;
+  align-items: center;
+}
+
+.search > input {
+  margin-top: 6px;
+  width: 278px;
+  height: 32px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: rgba(211, 211, 211, 0.13);
+}
+
+.links {
+  padding-top: 10px;
+  width: 19%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
