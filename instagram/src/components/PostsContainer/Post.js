@@ -14,7 +14,10 @@ const Post = props => {
       />
       <MediaSection imageUrl={props.post.imageUrl} />
       <LikeSection likes={props.post.likes} />
-      <CommentSection comments={props.post.comments} />
+      <CommentSection
+        comments={props.post.comments}
+        timestamp={props.post.timestamp}
+      />
     </div>
   );
 };
