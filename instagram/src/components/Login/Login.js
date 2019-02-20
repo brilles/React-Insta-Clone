@@ -12,7 +12,9 @@ export default class Login extends React.Component {
   }
 
   handleChanges = e =>
-    this.setState({ username: e.target.value, password: e.target.value });
+    this.setState({
+      [e.target.name]: e.target.value
+    });
 
   logIn = e => {
     e.preventDefault();
@@ -30,12 +32,14 @@ export default class Login extends React.Component {
             <input
               type="text"
               placeholder="Phone number, username, or email"
+              name="username"
               value={this.state.user}
               onChange={this.handleChanges}
             />
             <input
               type="password"
               placeholder="Password"
+              name="password"
               value={this.state.password}
               onChange={this.handleChanges}
             />

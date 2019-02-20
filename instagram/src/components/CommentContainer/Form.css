@@ -13,3 +13,7 @@ form {
   align-items: center;
   background: #fff;
 }
+
+form > input {
+  padding-left: 0;
+}
