@@ -17,14 +17,16 @@ const SearchBar = props => {
         />
       </div>
       <div className="links">
-        <div className="links-item">
-          <i className="far fa-compass fa-2x" />
-        </div>
-        <div className="links-item">
-          <i className="far fa-heart fa-2x" />
-        </div>
-        <div className="links-item">
-          <i className="far fa-user fa-2x" />
+        <div className="links-container">
+          <div className="links-item">
+            <i className="far fa-compass fa-2x" />
+          </div>
+          <div className="links-item">
+            <i className="far fa-heart fa-2x" />
+          </div>
+          <div className="links-item">
+            <i className="far fa-user fa-2x" />
+          </div>
         </div>
       </div>
     </div>
