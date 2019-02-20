@@ -1,11 +1,15 @@
 input {
   border: none;
   height: 35px;
-  width: 95%;
+  width: 93%;
+  background-color: #fff;
+  padding-left: 10px;
+  border-radius: 1px;
 }
 
 form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #fff;
 }

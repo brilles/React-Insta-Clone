@@ -1,7 +1,7 @@
 import React from "react";
 import dummyData from "../../dummy-data";
 import SearchBar from "../SearchBar/SearchBar";
-import PostsContainer from "../PostsContainer/PostsContainer";
+import PostsContainer from "./PostsContainer";
 
 export default class PostPage extends React.Component {
   constructor() {
