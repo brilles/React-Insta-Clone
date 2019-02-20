@@ -2,3 +2,6 @@
   max-width: 600px;
   margin: 0 auto;
 }
+.post-container:last-of-type {
+  margin-bottom: 32px;
+}

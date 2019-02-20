@@ -1,7 +1,8 @@
 import React from "react";
 import instagramlogo from "../../assets/instagramlogo.png";
 import "./Search.css";
-function SearchBar() {
+
+const SearchBar = props => {
   return (
     <div className="search-bar-container">
       <div className="logo">
@@ -9,7 +10,11 @@ function SearchBar() {
         <img src={instagramlogo} alt="instagram logo" />
       </div>
       <div className="search">
-        <input type="text" placeholder=" Search" />
+        <input
+          type="text"
+          placeholder="Search"
+          onKeyDown={props.handleSearch}
+        />
       </div>
       <div className="links">
         <div className="links-item">
@@ -24,6 +29,6 @@ function SearchBar() {
       </div>
     </div>
   );
-}
+};
 
 export default SearchBar;

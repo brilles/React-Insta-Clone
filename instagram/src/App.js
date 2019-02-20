@@ -8,19 +8,36 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      postsData: []
+      postsData: [],
+      postsDataFiltered: []
     };
   }
 
   componentDidMount() {
-    // console.log("CDM running");
     this.setState({ postsData: dummyData });
   }
+
+  handleSearch = e => {
+    this.setState({
+      postsDataFiltered: this.state.postsData.filter(post => {
+        if (post.username === e.target.value) {
+          return post;
+        }
+      })
+    });
+  };
+
   render() {
     return (
       <div className="App">
-        <SearchBar />
-        <PostsContainer postsData={this.state.postsData} />
+        <SearchBar handleSearch={this.handleSearch} />
+        <PostsContainer
+          postsData={
+            this.state.postsDataFiltered[0] == null
+              ? this.state.postsData
+              : this.state.postsDataFiltered
+          }
+        />
       </div>
     );
   }
