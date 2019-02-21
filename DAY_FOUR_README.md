@@ -37,9 +37,9 @@
 
 ---
 
-State Driven Views are important to software developers because it gets everyone on the same page. All the states of your application are now easier to think about. If your thinking about state before anything else, you can think about parts of the application in isolation, and not have side effects on other states. Instead of a "soup" of states, you have a well defined structure of states. This is important because if someone needs to hop into a project quickly, they can be effective immediatley because they don't have to worry about impacting other states
+State Driven Views are important to software developers because it gets everyone on the same page. All the states of your application are now easier to think about. If your thinking about state before anything else, you can think about parts of the application in isolation, and not have side effects on other states. Instead of a "soup" of states, you have a well defined structure of states. This is important because if someone needs to hop into a project quickly, they can be effective immediately because they don't have to worry about impacting other states
 
-State driven applications are apps that are driven by an apps state. The diferent states are caused by different events that occur from the birth if the app on the clients machine. They are designed and developed with the app's state in mind from the very beginning. In this way of thinking, state is not a "side effect" of actions in the app, but the soul of you will.
+State driven applications are apps that are driven by an app’s state. The different states are caused by different events that occur from the birth of the app on the client's machine. They are designed and developed with the app's state in mind from the very beginning. In this way of thinking, state is not a "side effect" of actions in the app, but the soul of it if you will.
 
 They are powerful because they are scalable and easily updated and maintainable.
 
