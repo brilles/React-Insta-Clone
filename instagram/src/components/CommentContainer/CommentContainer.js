@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
+import styled from "styled-components";
+
+const Username = styled.span`
+  font-weight: 500;
+`;
 
 const CommentContainer = props => {
   return (
     <div className="text">
-      <span className="username">{props.comment.username} </span>
+      <Username>{props.comment.username} </Username>
       <span className="comment">{props.comment.text}</span>
     </div>
   );

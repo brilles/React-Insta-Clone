@@ -2,25 +2,30 @@ import React from "react";
 import instagramlogo from "../../assets/instagramlogo.png";
 import styled from "styled-components";
 
-const SearchBarContainer = styled.div`
+const Header = styled.div`
   display: flex;
   height: 98px;
   border-bottom: 1px solid lightgray;
-  .logo {
-    width: 33.3%;
-    display: flex;
-    align-items: center;
-  }
   .fab {
     padding: 3px 26px 0 20px;
     border-right: 1px solid #000;
   }
-  .logo > img {
-    padding-top: 11px;
-    width: 140px;
-    height: 40px;
-    padding-left: 22px;
-  }
+`;
+
+const LogoHeader = styled.div`
+  display: flex;
+  height: 98px;
+  border-bottom: 1px solid lightgray;
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+`;
+
+const LogoImage = styled.img`
+  padding-top: 11px;
+  width: 140px;
+  height: 40px;
+  padding-left: 22px;
 `;
 
 const Links = styled.div`
@@ -55,11 +60,11 @@ const Search = styled.div`
 
 const SearchBar = props => {
   return (
-    <SearchBarContainer>
-      <div className="logo">
+    <Header>
+      <LogoHeader>
         <i className="fab fa-instagram fa-3x" />
-        <img src={instagramlogo} alt="instagram logo" />
-      </div>
+        <LogoImage src={instagramlogo} alt="instagram logo" />
+      </LogoHeader>
       <Search>
         <input
           type="text"
@@ -80,7 +85,7 @@ const SearchBar = props => {
           </div>
         </div>
       </Links>
-    </SearchBarContainer>
+    </Header>
   );
 };
 

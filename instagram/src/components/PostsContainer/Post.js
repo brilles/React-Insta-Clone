@@ -2,8 +2,16 @@ import React from "react";
 import HeaderSection from "./HeaderSection";
 import MediaSection from "../MediaContainer/MediaSection";
 import CommentSection from "../CommentContainer/CommentSection";
-import "./Post.css";
 import LikeSection from "./LikeSection";
+import styled from "styled-components";
+
+const PostContainer = styled.div`
+  max-width: 600px;
+  margin: 0 auto;
+  :last-of-type {
+    margin-bottom: 32px;
+  }
+`;
 
 class Post extends React.Component {
   constructor(props) {
@@ -23,7 +31,7 @@ class Post extends React.Component {
 
   render() {
     return (
-      <div className="post-container">
+      <PostContainer>
         <HeaderSection
           username={this.props.post.username}
           thumbnailUrl={this.props.post.thumbnailUrl}
@@ -34,7 +42,7 @@ class Post extends React.Component {
           comments={this.props.post.comments}
           timestamp={this.props.post.timestamp}
         />
-      </div>
+      </PostContainer>
     );
   }
 }

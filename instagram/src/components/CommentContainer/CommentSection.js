@@ -2,8 +2,25 @@ import React, { Component } from "react";
 import CommentContainer from "./CommentContainer";
 import CommentForm from "./CommentForm";
 import PropTypes from "prop-types";
-import "./Comment.css";
 import moment from "moment";
+import styled from "styled-components";
+
+const CommentSectionContainer = styled.div`
+  border: 1px solid lightgray;
+  border-top: none;
+  padding: 8px 16px;
+  line-height: 1.5;
+  padding-top: 0;
+`;
+
+const Time = styled.div`
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid lightgray;
+  font-size: 0.8rem;
+  color: gray;
+  font-weight: 500;
+`;
 
 class CommentSection extends Component {
   constructor(props) {
@@ -35,24 +52,24 @@ class CommentSection extends Component {
 
   render() {
     return (
-      <div className="comment-container">
+      <CommentSectionContainer>
         {this.state.commentsData.map((commentsDatum, index) => (
           <CommentContainer key={index} comment={commentsDatum} />
         ))}
-        <div className="time">
+        <Time>
           <p>
             {moment(
               this.props.timestamp,
               "'MMMM Do YYYY, h:mm:ss a'"
             ).fromNow()}
           </p>
-        </div>
+        </Time>
         <CommentForm
           comment={this.state.comment}
           addComment={this.addNewComment}
           change={this.handleChanges}
         />
-      </div>
+      </CommentSectionContainer>
     );
   }
 }
