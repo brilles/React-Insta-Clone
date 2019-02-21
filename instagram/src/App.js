@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import PostPage from "./components/PostsContainer/PostsPage";
 import withAuthenticate from "./components/Authenication/withAuthenticate";
-import Login from "./components/Login/Login";
+import LoginPage from "./components/Login/LoginPage";
 
 // currying
-const ComponentFromWithAuthenticate = withAuthenticate(PostPage)(Login);
+const ComponentFromWithAuthenticate = withAuthenticate(PostPage)(LoginPage);
 
 export default class App extends Component {
   state = {};

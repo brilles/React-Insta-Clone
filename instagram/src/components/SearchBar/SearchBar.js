@@ -58,7 +58,7 @@ const Search = styled.div`
   }
 `;
 
-const SearchBar = props => {
+export default function SearchBar(props) {
   return (
     <Header>
       <LogoHeader>
@@ -87,6 +87,4 @@ const SearchBar = props => {
       </Links>
     </Header>
   );
-};
-
-export default SearchBar;
+}

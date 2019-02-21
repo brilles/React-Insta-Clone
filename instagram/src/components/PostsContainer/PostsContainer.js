@@ -1,7 +1,7 @@
 import React from "react";
 import Post from "./Post";
 
-const PostContainer = props => {
+export default function PostContainer(props) {
   return (
     <div className="posts-container">
       {props.postsData.map(datum => (
@@ -9,6 +9,4 @@ const PostContainer = props => {
       ))}
     </div>
   );
-};
-
-export default PostContainer;
+}

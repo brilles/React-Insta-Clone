@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderSection from "./HeaderSection";
-import MediaSection from "../MediaContainer/MediaSection";
+import MediaSection from "./MediaSection";
 import CommentSection from "../CommentContainer/CommentSection";
 import LikeSection from "./LikeSection";
 import styled from "styled-components";
@@ -13,7 +13,7 @@ const PostContainer = styled.div`
   }
 `;
 
-class Post extends React.Component {
+export default class Post extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,5 +46,3 @@ class Post extends React.Component {
     );
   }
 }
-
-export default Post;

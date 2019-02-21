@@ -1,6 +1,6 @@
 import React from "react";
 
-const withAuthenticate = PostPage => LoginPage =>
+export const withAuthenticate = PostPage => LoginPage =>
   class extends React.Component {
     constructor() {
       super();
