@@ -31,7 +31,7 @@ export default class Login extends React.Component {
           <form action="">
             <input
               type="text"
-              placeholder="Phone number, username, or email"
+              placeholder="Username"
               name="username"
               value={this.state.user}
               onChange={this.handleChanges}
